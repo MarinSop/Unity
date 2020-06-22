@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 50e97ba7c96a1a143a0c629a533be290
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2890442224789765117
+    second: MinotaurGuardBattleAxe-sheet_0
+  - first:
+      213: -7401348396879673146
+    second: MinotaurGuardBattleAxe-sheet_1
+  - first:
+      213: -1973574227496048293
+    second: MinotaurGuardBattleAxe-sheet_2
+  - first:
+      213: 4494214399778671314
+    second: MinotaurGuardBattleAxe-sheet_3
+  - first:
+      213: -9175861529505205959
+    second: MinotaurGuardBattleAxe-sheet_4
+  - first:
+      213: 1090935552208820612
+    second: MinotaurGuardBattleAxe-sheet_5
+  - first:
+      213: -8855437706839726331
+    second: MinotaurGuardBattleAxe-sheet_6
+  - first:
+      213: -4336157732306947173
+    second: MinotaurGuardBattleAxe-sheet_7
+  - first:
+      213: -5979175643636769244
+    second: MinotaurGuardBattleAxe-sheet_8
+  - first:
+      213: -8854815252871170234
+    second: MinotaurGuardBattleAxe-sheet_9
+  - first:
+      213: -5389756925712734877
+    second: MinotaurGuardBattleAxe-sheet_10
+  - first:
+      213: -8169793252060425628
+    second: MinotaurGuardBattleAxe-sheet_11
+  - first:
+      213: -5663133688291367444
+    second: MinotaurGuardBattleAxe-sheet_12
+  - first:
+      213: -6891563108219025828
+    second: MinotaurGuardBattleAxe-sheet_13
+  - first:
+      213: -3144007487914107707
+    second: MinotaurGuardBattleAxe-sheet_14
+  - first:
+      213: -7920508064284316206
+    second: MinotaurGuardBattleAxe-sheet_15
+  - first:
+      213: -408852960057925677
+    second: MinotaurGuardBattleAxe-sheet_16
+  - first:
+      213: -5931014077766325311
+    second: MinotaurGuardBattleAxe-sheet_17
+  - first:
+      213: 715116033667780311
+    second: MinotaurGuardBattleAxe-sheet_18
+  - first:
+      213: 170426321514398323
+    second: MinotaurGuardBattleAxe-sheet_0
+  - first:
+      213: -4695894382549399451
+    second: MinotaurGuardBattleAxe-sheet_1
+  - first:
+      213: -1286841588408397295
+    second: MinotaurGuardBattleAxe-sheet_2
+  - first:
+      213: 6691346261474515877
+    second: MinotaurGuardBattleAxe-sheet_3
+  - first:
+      213: -5643616144448118614
+    second: MinotaurGuardBattleAxe-sheet_4
+  - first:
+      213: -6313195923171655007
+    second: MinotaurGuardBattleAxe-sheet_5
+  - first:
+      213: -5759199050527847366
+    second: MinotaurGuardBattleAxe-sheet_6
+  - first:
+      213: -6240375472147490723
+    second: MinotaurGuardBattleAxe-sheet_7
+  - first:
+      213: 262553116911618645
+    second: MinotaurGuardBattleAxe-sheet_8
+  - first:
+      213: -403001139711106973
+    second: MinotaurGuardBattleAxe-sheet_9
+  - first:
+      213: -4393314274860512020
+    second: MinotaurGuardBattleAxe-sheet_10
+  - first:
+      213: 1687290296146731880
+    second: MinotaurGuardBattleAxe-sheet_11
+  - first:
+      213: -7947010589910904518
+    second: MinotaurGuardBattleAxe-sheet_12
+  - first:
+      213: 7985222311547363363
+    second: MinotaurGuardBattleAxe-sheet_13
+  - first:
+      213: 3524858130059978132
+    second: MinotaurGuardBattleAxe-sheet_14
+  - first:
+      213: -3886520225177120954
+    second: MinotaurGuardBattleAxe-sheet_15
+  - first:
+      213: -3096923264233929287
+    second: MinotaurGuardBattleAxe-sheet_16
+  - first:
+      213: -3257379022550077293
+    second: MinotaurGuardBattleAxe-sheet_17
+  - first:
+      213: 227479109841883527
+    second: MinotaurGuardBattleAxe-sheet_18
+  - first:
+      213: 4230537427892634255
+    second: MinotaurGuardBattleAxe-sheet_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3720e3226d97d5200800000000000000
+      internalID: 170426321514398323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568046160f4d4deb0800000000000000
+      internalID: -4695894382549399451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112d7b0b468342ee0800000000000000
+      internalID: -1286841588408397295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab9358f8ff6cdc50800000000000000
+      internalID: 6691346261474515877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0a28d8409dda1b0800000000000000
+      internalID: -5643616144448118614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2c8e1b1c50368a0800000000000000
+      internalID: -6313195923171655007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c45822af63310b0800000000000000
+      internalID: -5759199050527847366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58969d229bb569a0800000000000000
+      internalID: -6240375472147490723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a40343ba6c4a300800000000000000
+      internalID: 262553116911618645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360217f3990486af0800000000000000
+      internalID: -403001139711106973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec494c91ffc703c0800000000000000
+      internalID: -4393314274860512020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8632acea5957a6710800000000000000
+      internalID: 1687290296146731880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31d71a39fb86b190800000000000000
+      internalID: -7947010589910904518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320ed44826531de60800000000000000
+      internalID: 7985222311547363363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4956fd53bcfcae030800000000000000
+      internalID: 3524858130059978132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f42f5627e401ac0800000000000000
+      internalID: -3886520225177120954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b581ba03b48505d0800000000000000
+      internalID: -3096923264233929287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390f71e89077bc2d0800000000000000
+      internalID: -3257379022550077293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurGuardBattleAxe-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78192ff8b0b282300800000000000000
+      internalID: 227479109841883527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
