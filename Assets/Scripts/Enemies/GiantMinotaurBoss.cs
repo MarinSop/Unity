@@ -52,9 +52,13 @@ public class GiantMinotaurBoss : MonoBehaviour
 
 
 
-
+    void playTheme()
+    {
+        FindObjectOfType<AudioManager>().PlayMusic("GiantMinotaurTheme");        
+    }
     void Start()
     {
+        Invoke("playTheme", 0.1f);
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");

@@ -41,6 +41,8 @@ public class MinotaurGuardBattleAxe : MonoBehaviour
     public float dodgeTime;
     float currentDodgeTime;
 
+    bool soundPlayed = false;
+
 
     float dampVel;
     // Start is called before the first frame update
@@ -129,6 +131,11 @@ public class MinotaurGuardBattleAxe : MonoBehaviour
                 attackLenght += Time.deltaTime;
                 if(!hitSucessful && attackLenght >= 0.5f && attackLenght <= 0.75f)
                 {
+                    if(!soundPlayed)
+                    {
+                        FindObjectOfType<AudioManager>().Play("Swing");
+                        soundPlayed = true;
+                    }
                     Collider2D hit = Physics2D.OverlapCircle(attackPos.position, attackRange, playerLayer);
                     if(hit)
                     {
@@ -142,6 +149,7 @@ public class MinotaurGuardBattleAxe : MonoBehaviour
                     attacking = false;
                     attackLenght = 0.0f;
                     attackCooldown = true;
+                    soundPlayed = false;
                 }
             }
 

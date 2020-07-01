@@ -41,6 +41,7 @@ public class EnemyHitManager : MonoBehaviour
         isHit = true;
         currentStunTime = stunTime;
         rb.AddForce(knockback, ForceMode2D.Impulse);
+        FindObjectOfType<AudioManager>().Play("Hurt");
         enemyStats.takeDamage(damage);
         hitAmount += 1;
     }

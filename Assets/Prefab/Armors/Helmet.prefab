@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  defense: 50
+  defense: 5
   knockback: 0
   weaponType: 
 --- !u!95 &-6725787494722262029

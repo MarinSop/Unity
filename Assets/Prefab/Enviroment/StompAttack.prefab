@@ -1483,7 +1483,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: 6e31bdf2ca4360e4e8bb3ccc15c195a8, type: 3}
+    - sprite: {fileID: 21300000, guid: c279f96d78476f5429f2293fe6c55d61, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4819,5 +4819,5 @@ MonoBehaviour:
   timeTillDestroy: 3
   speed: 7
   damage: 40
-  knockback: 20
+  knockback: 15
   x: 1

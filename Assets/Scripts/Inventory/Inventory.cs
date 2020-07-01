@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Inventory : MonoBehaviour
     public int armorSlotAmount;
     public GameObject inventory;
     public GameObject statsPanel;
+    public GameObject backToMenuButton;
 
     //Inventory drag and drop system
     EventSystem eventSystem;
@@ -68,11 +70,13 @@ public class Inventory : MonoBehaviour
             {
                 inventory.SetActive(true);
                 isInventoryEnabled = true;
+                backToMenuButton.SetActive(true);
             }
             else
             {
                 inventory.SetActive(false);
                 isInventoryEnabled = false;
+                backToMenuButton.SetActive(false);
             }
         }
         if (isInventoryEnabled)
@@ -146,7 +150,7 @@ public class Inventory : MonoBehaviour
             {
                 if (result.gameObject.GetComponent<Slot>())
                 {
-                    if(!result.gameObject.GetComponent<Slot>().isEmpty)
+                    if (!result.gameObject.GetComponent<Slot>().isEmpty)
                     {
                         holdTimerStart = true;
                         itemSlot = result.gameObject;
@@ -208,7 +212,7 @@ public class Inventory : MonoBehaviour
                         drop = true;
                     }
                 }
-                if(drop == true)
+                if (drop == true)
                 {
                     Instantiate(heldItem.GetComponent<Item>().itemDrop, transform.position, Quaternion.Euler(0, 0, 0));
                     Destroy(heldItem);
@@ -216,10 +220,10 @@ public class Inventory : MonoBehaviour
                 }
 
             }
-            if(holdTimerStart && !isHolding)
+            if (holdTimerStart && !isHolding)
             {
                 statsPanel.SetActive(true);
-                Vector3 offset = new Vector3(-100.0f, 0.0f,0.0f);
+                Vector3 offset = new Vector3(-100.0f, 0.0f, 0.0f);
                 statsPanel.transform.position = Input.mousePosition + offset;
                 float damage = heldItem.GetComponent<Item>().equipment.GetComponent<ItemStats>().damage;
                 float defense = heldItem.GetComponent<Item>().equipment.GetComponent<ItemStats>().defense;
@@ -233,13 +237,18 @@ public class Inventory : MonoBehaviour
                 statsPanel.SetActive(false);
             }
 
-            
-                isHolding = false;
-                holdTimerStart = false;
-                currentHoldWaitTime = holdWaitTime;
-            
+
+            isHolding = false;
+            holdTimerStart = false;
+            currentHoldWaitTime = holdWaitTime;
+
 
         }
+    }
+
+    public void backToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

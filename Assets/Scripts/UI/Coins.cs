@@ -28,6 +28,7 @@ public class Coins : MonoBehaviour
         {
             if(coin.GetComponent<CoinDrop>().pickupable)
             {
+                FindObjectOfType<AudioManager>().Play("Pickup");
                 coinAmount += coin.GetComponent<CoinDrop>().coinValue;
                 Destroy(coin.gameObject);
             }

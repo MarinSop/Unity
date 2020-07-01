@@ -7,6 +7,7 @@ TagManager:
   - Inventory
   - Slot
   - CameraOffset
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Checkpoint
   - BossCheckpoint
   - Door
-  - 
+  - BossBarrier
   - 
   - 
   - 

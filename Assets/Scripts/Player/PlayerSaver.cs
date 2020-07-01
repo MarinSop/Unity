@@ -15,7 +15,10 @@ public class PlayerSaver : MonoBehaviour
     {
         playerStats = GetComponent<PlayerStats>();
         inventory = GetComponent<Inventory>();
-        transform.position = new Vector2(PlayerPrefs.GetFloat("pPosX", transform.position.x), PlayerPrefs.GetFloat("pPosY", transform.position.y));
+        if (GameObject.FindGameObjectWithTag("Checkpoint"))
+        {
+            transform.position = new Vector2(PlayerPrefs.GetFloat("pPosX", transform.position.x), PlayerPrefs.GetFloat("pPosY", transform.position.y));
+        }
         playerStats.currentHealth = PlayerPrefs.GetFloat("pHealth", playerStats.maxHealth);
         coins.GetComponent<Coins>().coinAmount = PlayerPrefs.GetFloat("Coins", 0);
         for(int i = 0; i < inventory.slotAmount; ++i)
@@ -37,6 +40,7 @@ public class PlayerSaver : MonoBehaviour
                 {
                     Instantiate(allItems[j], inventory.armorSlots[i].transform);
                     inventory.armorSlots[i].GetComponent<Slot>().isEmpty = false;
+                    inventory.armorSlots[i].GetComponent<Equip>().equipArmor();
                 }
             }
         }

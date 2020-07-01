@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -35,11 +36,15 @@ public class PlayerMovement : MonoBehaviour
     float currenDodgingTime;
     [HideInInspector]
     public bool isDodging = false;
+
+    bool soundPlayed = false;
     // Start is called before the first frame update
 
 
     void Start()
     {
+        Invoke("playTheme", 0.1f);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("BossBarrier"),true);
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<PlayerAnimationManager>();
         hit = GetComponent<PlayerHitManager>();
@@ -67,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
                 if (SimpleInput.GetButtonDown("Jump") && grounded)
                 {
                     jump = true;
+                    FindObjectOfType<AudioManager>().Play("Jump");
                 }
 
 
@@ -107,6 +113,16 @@ public class PlayerMovement : MonoBehaviour
         }
         anim.isDodging = isDodging;
         anim.stunned = hit.isHit;
+        if(Mathf.Abs(rb.velocity.x) >= 7.0f && !soundPlayed && Mathf.Abs(rb.velocity.x) < 11.0f && grounded)
+        {
+            soundPlayed = true;
+            FindObjectOfType<AudioManager>().Play("Run");
+        }
+        else if(Mathf.Abs(rb.velocity.x) < 7.0f && soundPlayed || Mathf.Abs(rb.velocity.x) > 11.0f && soundPlayed || !grounded && soundPlayed)
+        {
+            soundPlayed = false;
+            FindObjectOfType<AudioManager>().Stop("Run");
+        }
     }
     void FixedUpdate()
     {
@@ -153,6 +169,7 @@ public class PlayerMovement : MonoBehaviour
                     isDodging = true;
                     transform.GetComponent<PlayerStats>().useStamina(dodgeCost);
                     Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                    FindObjectOfType<AudioManager>().Play("Dodge");
 
                 }
             }
@@ -176,7 +193,13 @@ public class PlayerMovement : MonoBehaviour
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
         }
     }
-
+    void playTheme()
+    {
+        if(SceneManager.GetActiveScene().name == "Level1")
+        {
+            FindObjectOfType<AudioManager>().PlayMusic("Level1Theme");
+        }
+    }
 
     private void OnDrawGizmos()
     {

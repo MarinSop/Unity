@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6597649623317885433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6597649623317885435}
+  - component: {fileID: 6597649623317885432}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6597649623317885435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597649623317885433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 124.5, y: -5.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6597649623317885432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597649623317885433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667dc69152ce12347aa7d4c7be0182ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Hurt
+    clip: {fileID: 8300000, guid: b67266d9cf021364d96fd6a7616039a4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    music: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 3fc1e4cfcaee5a54d8e4b64e9c61c71c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    music: 0
+    source: {fileID: 0}
+  - name: Pickup
+    clip: {fileID: 8300000, guid: 5db6ad44a18c8fe4ebe3f5279668420a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    music: 0
+    source: {fileID: 0}
+  - name: Run
+    clip: {fileID: 8300000, guid: fe56eaf6c0cabff47a31a9097011a720, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    music: 0
+    source: {fileID: 0}
+  - name: Swing
+    clip: {fileID: 8300000, guid: 10faa59aa8d5cb04bbcfaac7761dfaca, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    music: 0
+    source: {fileID: 0}
+  - name: Dodge
+    clip: {fileID: 8300000, guid: 97449267efa0f9b4c863664de29e0c64, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    music: 0
+    source: {fileID: 0}
+  - name: Level1Theme
+    clip: {fileID: 8300000, guid: 153bb1ec63c108e44acd255b90af5be3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    music: 1
+    source: {fileID: 0}
+  - name: GiantMinotaurTheme
+    clip: {fileID: 8300000, guid: 90abf28ffc57877438b30225497a7396, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    music: 1
+    source: {fileID: 0}
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: c9bb34f88dd4bb342a11fe50b3c337e3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    music: 1
+    source: {fileID: 0}

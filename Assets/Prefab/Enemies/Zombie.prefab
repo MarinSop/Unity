@@ -246,7 +246,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 768
   attackPos: {fileID: 1084600694774269291}
-  attackRange: 2
   attackLenght: 1
   attackAnimationTime: 1
   attackCooldownTime: 1
@@ -263,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHit: 0
-  stunTime: 0
+  stunTime: 0.5
   hitAmount: 0
 --- !u!70 &5099512077133107599
 CapsuleCollider2D:

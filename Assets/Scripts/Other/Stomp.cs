@@ -35,7 +35,7 @@ public class Stomp : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            collision.GetComponent<PlayerHitManager>().hit(new Vector2(knockback, 0.0f), damage);
+            collision.GetComponent<PlayerHitManager>().hit(new Vector2(knockback * x, 0.0f), damage);
             Destroy(gameObject);
         }
     }

@@ -23,6 +23,30 @@ TextureImporter:
   - first:
       213: -3461669253751483552
     second: ironhelmetspritesheet_6
+  - first:
+      213: 3066841338501851488
+    second: ironhelmetspritesheet_0
+  - first:
+      213: 2297842650752814114
+    second: ironhelmetspritesheet_1
+  - first:
+      213: -7003004388908354372
+    second: ironhelmetspritesheet_2
+  - first:
+      213: -9150604935397793650
+    second: ironhelmetspritesheet_3
+  - first:
+      213: -2176650226210521185
+    second: ironhelmetspritesheet_4
+  - first:
+      213: -7015905416187421665
+    second: ironhelmetspritesheet_5
+  - first:
+      213: -8791349281722698261
+    second: ironhelmetspritesheet_6
+  - first:
+      213: -8896097254904125115
+    second: ironhelmetspritesheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b793059973b6ddf80800000000000000
-      internalID: -8080184269893256837
+      spriteID: 069e2e3d2fb9f8a20800000000000000
+      internalID: 3066841338501851488
       vertices: []
       indices: 
       edges: []
@@ -155,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0764f2d4b372d9670800000000000000
-      internalID: 8547030803470567024
+      spriteID: 22c0dd367b393ef10800000000000000
+      internalID: 2297842650752814114
       vertices: []
       indices: 
       edges: []
@@ -176,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d03a498ecac4e8e30800000000000000
-      internalID: 4507624582564586253
+      spriteID: cb4bd9e9c9450de90800000000000000
+      internalID: -7003004388908354372
       vertices: []
       indices: 
       edges: []
@@ -197,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b271efa6a2766100800000000000000
-      internalID: 100894101903340211
+      spriteID: e80ada11b45820180800000000000000
+      internalID: -9150604935397793650
       vertices: []
       indices: 
       edges: []
@@ -218,14 +242,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75a9b185092f461e0800000000000000
-      internalID: -2205371215737284009
+      spriteID: f9fb272d62cfac1e0800000000000000
+      internalID: -2176650226210521185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: ironhelmetspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cd862223f72ae90800000000000000
+      internalID: -7015905416187421665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ironhelmetspritesheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -239,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16e9d3625cef7fe0800000000000000
-      internalID: -1188971937995823586
+      spriteID: be57886286adef580800000000000000
+      internalID: -8791349281722698261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ironhelmetspritesheet_6
+      name: ironhelmetspritesheet_7
       rect:
         serializedVersion: 2
         x: 64
@@ -260,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0635048872ea5ffc0800000000000000
-      internalID: -3461669253751483552
+      spriteID: 549ac122ea6ba8480800000000000000
+      internalID: -8896097254904125115
       vertices: []
       indices: 
       edges: []

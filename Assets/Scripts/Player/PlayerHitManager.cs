@@ -35,6 +35,7 @@ public class PlayerHitManager : MonoBehaviour
             isHit = true;
             stats.takeDamage(damage);
             rb.AddForce(knockback, ForceMode2D.Impulse);
+            FindObjectOfType<AudioManager>().Play("Hurt");
         }
     }
 }

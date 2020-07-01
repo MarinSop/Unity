@@ -104,6 +104,11 @@ public class MinotaurGuardBow : MonoBehaviour
             currentDodgeTime = 0.0f;
             shootingCooldown = false;
             dodgeCooldown = false;
+            body.gameObject.SetActive(false);
+        }
+        if(!GetComponent<EnemyHitManager>().isHit && !body.gameObject.activeInHierarchy)
+        {
+            body.gameObject.SetActive(true);
         }
         dodge();
         shoot(direction);

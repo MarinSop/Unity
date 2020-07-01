@@ -22,7 +22,7 @@ public class ZombieMovement : MonoBehaviour
 
 
     public Transform attackPos;
-    public float attackRange;
+    //public float attackRange;
     public float attackLenght;
     bool isAttacking = false;
     bool hitSucessful = false;
@@ -56,7 +56,7 @@ public class ZombieMovement : MonoBehaviour
             hitSucessful = false;
             attackCooldown = false;
         }
-        if (distance <= followRadius && distance > attackRange && !GetComponent<EnemyHitManager>().isHit && !isAttacking)
+        if (distance <= followRadius && !Physics2D.OverlapCircle(attackPos.position, attackLenght, playerMask) && !GetComponent<EnemyHitManager>().isHit && !isAttacking)
         {
             movement(distance, direction);
         }
@@ -64,7 +64,7 @@ public class ZombieMovement : MonoBehaviour
         {
             deaccelerate = true;
         }
-        if (distance <= attackRange && !isAttacking && !attackCooldown)
+        if (Physics2D.OverlapCircle(attackPos.position, attackLenght, playerMask) && !isAttacking && !attackCooldown)
         {
             isAttacking = true;
         }
@@ -152,6 +152,6 @@ public class ZombieMovement : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, followRadius);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackLenght);
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        //Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

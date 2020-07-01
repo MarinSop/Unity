@@ -28,6 +28,7 @@ public class PickupButton : MonoBehaviour
             {
                 if (pickup.GetComponent<Pickup>())
                 {
+                    FindObjectOfType<AudioManager>().Play("Pickup");
                     for (int i = 0; i < inventory.slotAmount; ++i)
                     {
                         if (inventory.slots[i].GetComponent<Slot>().isEmpty == true)

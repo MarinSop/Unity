@@ -13,6 +13,8 @@ public class PlayerAttack : MonoBehaviour
     public bool attacking = false;
     bool hitSuccesful = false;
 
+    bool soundPlayed = false;
+
     public float longswordAttackCost;
     public float greatswordAttackCost;
     //public float piercingswordAttackCost;
@@ -29,7 +31,7 @@ public class PlayerAttack : MonoBehaviour
 
     bool firstAttack = false;
     bool secondAttack = false;
-    bool resetAttack = false;
+    //bool resetAttack = false;
     bool useFirstStamina = false;
     bool useSecondStamina = false;
 
@@ -51,24 +53,27 @@ public class PlayerAttack : MonoBehaviour
             {
                 if (SimpleInput.GetButtonDown("Attack"))
                 {
-                    if (firstAttack && !secondAttack)
+                    if (anim.weaponType == "longsword" || anim.weaponType == "greatsword")
                     {
-                        secondAttack = true;
-                        useSecondStamina = true;
-                        attacking = true;
+                        if (firstAttack && !secondAttack)
+                        {
+                            secondAttack = true;
+                            useSecondStamina = true;
+                            attacking = true;
 
-                    }
-                    if (secondAttack && !resetAttack && !firstAttack)
-                    {
-                        resetAttack = true;
-                        useFirstStamina = true;
-                        attacking = true;
-                    }
-                    if (!attacking)
-                    {
-                        attacking = true;
-                        useFirstStamina = true;
-                        firstAttack = true;
+                        }
+                        //if (secondAttack && !resetAttack && !firstAttack)
+                        //{
+                        //    resetAttack = true;
+                        //    useFirstStamina = true;
+                        //    attacking = true;
+                        //}
+                        if (!attacking)
+                        {
+                            attacking = true;
+                            useFirstStamina = true;
+                            firstAttack = true;
+                        }
                     }
                 }
             }
@@ -92,7 +97,7 @@ public class PlayerAttack : MonoBehaviour
             hitSuccesful = false;
             firstAttack = false;
             secondAttack = false;
-            resetAttack = false;
+            //resetAttack = false;
             firstAttackTime = 0.0f;
             gFirstAttackTime = 0.0f;
             secondAttackTime = 0.0f;
@@ -117,6 +122,11 @@ public class PlayerAttack : MonoBehaviour
                 firstAttackTime += Time.deltaTime;
                 if (firstAttackTime >= 0.33f && firstAttackTime <= 0.5f && !hitSuccesful)
                 {
+                    if (!soundPlayed)
+                    {
+                        soundPlayed = true;
+                        FindObjectOfType<AudioManager>().Play("Swing");
+                    }
                     if (useFirstStamina)
                     {
                         stats.useStamina(longswordAttackCost);
@@ -148,6 +158,7 @@ public class PlayerAttack : MonoBehaviour
                         attacking = false;
                         stats.canRefill = true;
                     }
+                    soundPlayed = false;
                     firstAttack = false;
                     hitSuccesful = false;
                     firstAttackTime = 0.0f;
@@ -165,11 +176,14 @@ public class PlayerAttack : MonoBehaviour
                 secondAttackTime += Time.deltaTime;
                 if (secondAttackTime >= 0.16f && secondAttackTime <= 0.5f && !hitSuccesful)
                 {
-                    Debug.Log("mid");
+                    if (!soundPlayed)
+                    {
+                        soundPlayed = true;
+                        FindObjectOfType<AudioManager>().Play("Swing");
+                    }
                     Collider2D hit = Physics2D.OverlapCircle(longSwordAttackPos.position, attackRange, enemyLayer);
                     if (hit)
                     {
-                        Debug.Log("attack");
                         hitSuccesful = true;
                         if (!hit.GetComponent<EnemyHitManager>())
                         {
@@ -187,19 +201,19 @@ public class PlayerAttack : MonoBehaviour
                 }
                 if (secondAttackTime >= 0.66f)
                 {
-                    Debug.Log("");
                     secondAttackTime = 0.0f;
                     attacking = false;
                     hitSuccesful = false;
                     secondAttack = false;
                     stats.canRefill = true;
-                    if (resetAttack)
-                    {
-                        attacking = true;
-                        resetAttack = false;
-                        firstAttack = true;
-                        anim.secondAttack = secondAttack;
-                    }
+                    soundPlayed = false;
+                    //if (resetAttack)
+                    //{
+                    //    attacking = true;
+                    //    resetAttack = false;
+                    //    firstAttack = true;
+                    //    anim.secondAttack = secondAttack;
+                    //}
                 }
             }
         }
@@ -222,6 +236,11 @@ public class PlayerAttack : MonoBehaviour
                 gFirstAttackTime += Time.deltaTime;
                 if (gFirstAttackTime >= 0.66f && gFirstAttackTime <= 1.16f && !hitSuccesful)
                 {
+                    if (!soundPlayed)
+                    {
+                        soundPlayed = true;
+                        FindObjectOfType<AudioManager>().Play("Swing");
+                    }
                     Collider2D hit = Physics2D.OverlapCircle(greatSwordAttackPos.position, attackRange, enemyLayer);
                     if (hit)
                     {
@@ -249,6 +268,7 @@ public class PlayerAttack : MonoBehaviour
                     }
                     firstAttack = false;
                     hitSuccesful = false;
+                    soundPlayed = false;
                     gFirstAttackTime = 0.0f;
                 }
 
@@ -264,6 +284,11 @@ public class PlayerAttack : MonoBehaviour
                 gSecondAttackTime += Time.deltaTime;
                 if (gSecondAttackTime >= 0.66f && gSecondAttackTime <= 1.16f && !hitSuccesful)
                 {
+                    if (!soundPlayed)
+                    {
+                        soundPlayed = true;
+                        FindObjectOfType<AudioManager>().Play("Swing");
+                    }
                     Collider2D hit = Physics2D.OverlapCircle(greatSwordAttackPos.position, attackRange, enemyLayer);
                     if (hit)
                     {
@@ -288,14 +313,15 @@ public class PlayerAttack : MonoBehaviour
                     attacking = false;
                     secondAttack = false;
                     hitSuccesful = false;
+                    soundPlayed = false;
                     stats.canRefill = true;
-                    if (resetAttack)
-                    {
-                        attacking = true;
-                        resetAttack = false;
-                        firstAttack = true;
-                        anim.secondAttack = secondAttack;
-                    }
+                    //if (resetAttack)
+                    //{
+                    //    attacking = true;
+                    //    resetAttack = false;
+                    //    firstAttack = true;
+                    //    anim.secondAttack = secondAttack;
+                    //}
                 }
             }
         }

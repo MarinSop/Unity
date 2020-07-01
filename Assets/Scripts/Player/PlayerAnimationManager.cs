@@ -65,11 +65,11 @@ public class PlayerAnimationManager : MonoBehaviour
             playerAnimator.SetBool("attackinggreatsword", firstAttack);
             playerAnimator.SetBool("attackinggreatsword2", secondAttack);
         }
-        else if(weaponType == "piercingsword")
-        {
-            playerAnimator.SetBool("attackingpiercingsword", firstAttack);
-            playerAnimator.SetBool("attackingpiercingsword2", secondAttack);
-        }
+        //else if(weaponType == "piercingsword")
+        //{
+        //    playerAnimator.SetBool("attackingpiercingsword", firstAttack);
+        //    playerAnimator.SetBool("attackingpiercingsword2", secondAttack);
+        //}
         playerAnimator.SetBool("jumping", jumping);
         playerAnimator.SetBool("stunned", stunned);
         playerAnimator.SetBool("dodging", isDodging);
@@ -91,31 +91,49 @@ public class PlayerAnimationManager : MonoBehaviour
             {
                 helmetAnimator.SetBool("greatswordattack", false);
                 helmetAnimator.SetBool("longswordattack", firstAttack);
+                if (!firstAttack)
+                {
+                    helmetAnimator.SetBool("longswordattack2", secondAttack);
+                }
             }
             else if (weaponType == "greatsword")
             {
                 helmetAnimator.SetBool("longswordattack", false);
                 helmetAnimator.SetBool("greatswordattack", firstAttack);
+                if (!firstAttack)
+                {
+                    helmetAnimator.SetBool("greatswordattack2", secondAttack);
+                }
             }
             helmetAnimator.SetBool("dodging", isDodging);
         }
         if (bodyAnimator)
         {
-            bodyAnimator.SetFloat("speed", runningVelocity);
-            bodyAnimator.SetBool("attacking", firstAttack);
-            bodyAnimator.SetBool("attacking2", secondAttack);
-            bodyAnimator.SetBool("jumping", jumping);
-            //bodyAnimator.SetBool("stunned", stunned);
-            //bodyAnimator.SetBool("dodging", isDodging);
+            if (weaponType == "greatsword")
+            {
+                bodyAnimator.SetBool("attackinggreatsword", firstAttack);
+                bodyAnimator.SetBool("attackinggreatsword2", secondAttack);
+            }
+            else if (weaponType == "longsword")
+            {
+                bodyAnimator.SetBool("attacking", firstAttack);
+                bodyAnimator.SetBool("attacking2", secondAttack);
+            }
+                bodyAnimator.SetFloat("speed", runningVelocity);
+                bodyAnimator.SetBool("jumping", jumping);
+                bodyAnimator.SetBool("dodging", isDodging);
         }
         if (legsAnimator)
         {
             legsAnimator.SetFloat("speed", runningVelocity);
+            if(weaponType == "longsword")
             legsAnimator.SetBool("attacking", firstAttack);
+            else if(weaponType == "greatsword")
+                legsAnimator.SetBool("greatswordattacking", firstAttack);
             legsAnimator.SetBool("attacking2", secondAttack);
+
             legsAnimator.SetBool("jumping", jumping);
-            //legsAnimator.SetBool("stunned", stunned);
-            //legsAnimator.SetBool("dodging", isDodging);
+            legsAnimator.SetBool("dodging", isDodging);
         }
     }
     void loadAnimatorIfAvailable()
@@ -125,12 +143,20 @@ public class PlayerAnimationManager : MonoBehaviour
             weaponAnimator = weaponHolder.GetChild(0).GetComponent<Animator>();
             if (weaponHolder.GetChild(0).GetComponent<ItemStats>().weaponType == "longsword")
             {
+                if(bodyAnimator)
+                {
+                    bodyAnimator.SetBool("idle2", true);
+                }
                 weaponType = weaponHolder.GetChild(0).GetComponent<ItemStats>().weaponType;
                 playerAnimator.SetBool("idle2", true);
 
             }
             else if (weaponHolder.GetChild(0).GetComponent<ItemStats>().weaponType == "greatsword")
             {
+                if (bodyAnimator)
+                {
+                    bodyAnimator.SetBool("idle3", true);
+                }
                 weaponType = weaponHolder.GetChild(0).GetComponent<ItemStats>().weaponType;
                 playerAnimator.SetBool("idle3", true);
             }
@@ -141,6 +167,11 @@ public class PlayerAnimationManager : MonoBehaviour
         }
         else
         {
+            if (bodyAnimator)
+            {
+                bodyAnimator.SetBool("idle2", false);
+                bodyAnimator.SetBool("idle3", false);
+            }
             weaponAnimator = null;
             playerAnimator.SetBool("idle2", false);
             playerAnimator.SetBool("idle3", false);
